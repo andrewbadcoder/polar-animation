@@ -21,7 +21,7 @@ def animate_polar(func, theta_max=2*np.pi, samples=1000, interval=16):
     ax = fig.add_subplot(111, polar=True)
 
     theta = np.linspace(0, theta_max, samples)
-    r_full = func(theta) + 1
+    r_full = func(theta)
 
     (line,) = ax.plot([], [], lw=2)
     ax.set_title("Polar Animation", pad=20)
